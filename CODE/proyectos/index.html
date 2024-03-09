@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swipe</title>
+</head>
+<style>
+    *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    overflow: hidden;
+    user-select: none;
+    background: #e5e5e5;
+  }
+  main {
+    background: url('phone.webp')no-repeat center ;
+    background-size: cover;
+    width: 320px;
+    height: 640px;
+    display: flex;
+    position: relative;
+    border: 3px solid red;
+  }
+
+  section {
+    background: #f6f6f6;
+    width: 100%;
+    border-radius: 32px;
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+    padding: 16px 6px;
+    margin: 24px;
+  }
+  header{
+    display: flex;
+    justify-content: center;
+
+  }
+  footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    justify-content: center;
+    align-items: center;
+    gap: 1px;
+    
+    padding: 0px 24px;
+    
+    > button {
+        height: 32px;
+        width: 32px;
+        border-radius: 50%;
+        border: 1px solid #878585;
+        
+    }
+  }
+  .cards{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    > article{
+        border-radius: 8px;
+        overflow: hidden;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        > img {
+        
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+             
+        }
+        > h2 {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 2;
+            padding: 5px;
+            color: white;
+            background: linear-gradient(to top, #000000, 20%, transparent 40%);
+
+        }
+    }
+    
+  }
+</style>
+<body>
+    <main>
+        <section>
+            <header><img src="tinder-logo.webp" alt="" height="40"></header>
+            <div class="cards">
+                <article>
+                    <img src="chica.jpg" alt="">
+                    <h2>Maria, 18 años</h2>
+                </article>
+            </div> 
+            <footer>
+                <button aria-label="">-</button>
+                <button aria-label=""></button>
+                <button aria-label=""></button>
+                <button aria-label=""></button>
+            </footer>
+        </section>
+       
+    </main>
+    
+</body>
+</html>

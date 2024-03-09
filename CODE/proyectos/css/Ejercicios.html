@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        main{
+            margin-top: 700px;
+        }
+        section {
+            position: relative;
+            display: grid;
+            width: 500px;
+            height: 500px;
+            background: red;
+            margin: auto;
+        }
+        div {
+            background: green;
+            width: 200px;
+            position: absolute;
+        }
+        .box-0 {
+            left: 0;
+        }
+        .box-1 {
+            right: 0;
+        }
+        .box-2 {
+            bottom: 0 ;
+        }
+        .box-3{
+            bottom: 0;
+            right: 0;
+        }
+        .box-4{
+            margin: 50% 50%;
+            top: 0px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <div class="box-0">
+                <h1>cero</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia earum consequuntur, in aperiam dicta deserunt excepturi fugiat sunt eligendi animi magni ea voluptate, suscipit accusantium ab atque recusandae numquam aliquid?</p>
+            </div>
+            <div class="box-1">
+                <p>uno</p>
+            </div>
+            <div class="box-2">
+                <p>dos</p>
+            </div>
+            <div class="box-3">
+                <p>tres</p>
+            </div>
+            <div class="box-4">
+                <p>cuatro</p>
+            </div>
+            
+        </section>
+    </main>
+    
+    </body>
+</html>
